@@ -1,0 +1,19 @@
+import 'package:json_annotation/json_annotation.dart';
+
+/// An enumeration.
+@JsonEnum()
+enum OrderLuggageStatusDto(final String? json) {
+  @JsonValue('CREATED')
+  created('CREATED'),
+  @JsonValue('DEPOSITED')
+  deposited('DEPOSITED'),
+  @JsonValue('WITHDRAWN')
+  withdrawn('WITHDRAWN'),
+  @JsonValue('DELETED')
+  deleted('DELETED'),
+
+  /// Default value for all unparsed values, allows backward compatibility when adding new values on the backend.
+  $unknown(null);
+
+  factory fromJson(String json) => values.firstWhere((e) => e.json == json, orElse: () => $unknown);
+}

@@ -1,0 +1,453 @@
+keys,description,ru,en
+appTitle,base,BAG24,BAG24
+yes,base,Да,Yes
+all,base,Все,All
+back,base,Назад,Back
+cancel,base,Отмена,Cancel
+change,base,Изменить,Change
+close,base,Закрыть,Close
+closed,base,Закрытые,Closed
+toContinue,base,Продолжить,Continue
+delete,base,Удалить,Delete
+description,base,Описание,Description
+done,base,Готово,Ready
+exit,base,Выйти,Log out
+ok,base,Ок,OK
+next,base,Далее,Next
+no,base,Нет,No
+profile,base,Профиль,Profile
+remove,base,Удалить,Delete
+repeat,base,Повторить,Repeat
+save,base,Сохранить,Save
+sec,base,сек,sec
+service,base,Сервис,Service
+services,base,Сервисы,Services
+skip,base,Пропустить,Skip
+success,base,Успешно,Successfully
+update,base,Обновить,Update
+copiedToClipboard,base,Скопировано в буфер обмена,Copied to clipboard
+pushNotifications,base,Push-уведомления:,Push notifications:
+linkCannotBeOpenedInBrowser,base,Невозможно открыть ссылку в браузере,Can't open link in browser
+requestVia,base,Запросить через,Request via
+resend,base,Отправить повторно,Resend
+airportAlreadyExists,exception,Аэропорт уже существует,The airport already exists
+airportCantDeleted,exception,Аэропорт не может быть удален,The airport cannot be deleted
+airportNotFound,exception,Аэропорт не найден,Airport not found
+noInternetConnection,exception,Интернет-соединение отсутствует,No internet connection
+impossibleSendOtpCode,exception,Ошибка при отправке OTP-кода,Error sending OTP code
+incompletePayment,exception,Существует незавершенный платеж,There is a pending payment
+accessTokenRequired,exception,Необходим ACCESS token,ACCESS token required
+allAgreementsMustBeAccepted,exception,Все соглашения должны быть приняты,All agreements must be accepted
+alreadyLocked,exception,Файл уже заблокирован,The file is already locked
+alreadyUnlocked,exception,Файл уже разблокирован,The file is already unlocked
+autoChargeOnFirstPayment,exception,Автосписание можно включить только при первом платеже,Auto debit can only be enabled on the first payment
+bindingNotFound,exception,Привязанная карта не найдена,Linked card not found
+bucketNotFound,exception,Корзина не найдена,Cart not found
+cantEnableAutoCharge,exception,Невозможно включить автоплатеж,Unable to enable auto payment
+cantSendOtpTooOften,exception,"Слишком часто был запрошен OTP-код. Пожалуйста, повторите попытку позже",The OTP code was requested too often. Please try again later
+cityAlreadyExists,exception,Город уже существует,The city already exists
+cityCantDeleted,exception,Город не может быть удален,The city cannot be deleted
+cityNotFound,exception,Город не найден,City not found
+companyNotFound,exception,Компания не найдена,Company not found
+countryAlreadyExists,exception,Страна уже существует,The country already exists
+countryCantDeleted,exception,Страна не может быть удалена,Country cannot be deleted
+countryNotFound,exception,Страна не найдена,Country not found
+defaultRateAlreadyExists,exception,Тариф по умолчанию уже существует,Default tariff already exists
+depositedDaysNotFound,exception,У заказа отсутствуют дни хранения багажа,The order does not have luggage storage days
+doNotNeedToPay,exception,Доплата не нужна за единицу багажа,No additional payment required per piece of luggage
+fileIsNotImage,exception,Файл не является изображением,The file is not an image
+fileNotFound,exception,Файл не найден,File not found
+internalServerError,exception,Ошибка на стороне сервера,Server side error
+invalidAmount,exception,Неверая сумма,Incredible amount
+invalidAutoPayment,exception,Автоматическое списание платежа доступно только после привязки карты,Automatic debiting of payment is available only after linking the card
+invalidCityData,exception,Неверные данные города,Incorrect city data
+invalidCountryData,exception,Неверные данные страны,Incorrect country data
+invalidFileExtension,exception,Неверное расширение файла,Invalid file extension
+invalidImageExtension,exception,Недопустимое расширение изображения,Invalid image extension
+invalidLuggage,exception,Неверная единица багажа,Invalid baggage item
+invalidLuggageData,exception,Для создания багажа нужен либо тариф либо специальное предложение,To create luggage you need either a tariff or a special offer
+invalidLuggageStatus,exception,Неверный статус единицы багажа,Invalid baggage status
+invalidMoaMilesAmount,exception,Неверное количество миль бонусной программы MILEONAIR,Incorrect number of miles in the MILEONAIR bonus program
+invalidMoaOtpCode,exception,Неверный OTP-код подтверждения бонусной программы MILEONAIR,Incorrect OTP confirmation code for the MILEONAIR bonus program
+invalidOperationStatus,exception,Некорректный статус операции по оплате заказа,Incorrect order payment transaction status
+invalidOrderStatus,exception,Нельзя выполнить операцию в текущем статусе заказа,The operation cannot be performed in the current order status
+invalidOtpCode,exception,Неверный OTP-код подтверждения,Invalid OTP verification code
+invalidPayment,exception,Неправильный платеж,Incorrect payment
+invalidPaymentMethod,exception,Выбранный способ платежа сейчас недоступен,The selected payment method is currently unavailable
+invalidPaymentStatus,exception,Неправильный статус платежа,Wrong payment status
+invalidPaymentType,exception,Неправильный тип платежа,Wrong payment type
+invalidRates,exception,Неверные тарифы,Incorrect rates
+invalidSpecialOffers,exception,Неправильные специальные предложения,Incorrect special offers
+invalidUserStatus,exception,Неверный статус пользователя,Invalid user status
+jwtDecodeError,exception,Неверный токен,Invalid token
+jwtExpireError,exception,Время жизни токена истекло,Token lifetime has expired
+locationNotFound,exception,Локация не найдена,Location not found
+locationTagNotFound,exception,Тег локации не найден,Location tag not found
+luggageIdsMustBeProvided,exception,Для доплаты обязательны идентификаторы багажа,Baggage IDs are required for surcharge
+luggageNotFound,exception,Единица багажа не найдена,Luggage item not found
+moaIsAlreadyIntegrated,exception,Бонусная программа MILEONAIR уже подключена,The MILEONAIR bonus program is already activated
+operationNotFound,exception,Операция не найдена,Operation not found
+orderLuggageNotFound,exception,Багаж не найден,Luggage not found
+orderNotFound,exception,Заказ не найден,Order not found
+otpCodeIsExpired,exception,OTP-код недействителен,OTP code is invalid
+paymentFailed,exception,Ошибка при проведении платежа,Error when making payment
+paymentMethodNotFound,exception,Способ платежа не найден,Payment method not found
+paymentNotAll,exception,Доплата за товар производится автоматически,Additional payment for goods is made automatically
+paymentNotFound,exception,Платеж не найден,Payment not found
+photosNotFound,exception,Фото не найдены,No photos found
+photosAlreadyLocked,exception,Фото уже заблокированы,Photos are already blocked
+apikeyNumberRequired,exception,API-KEY должен содержать как минимум одну цифру,API-KEY must contain at least one digit
+apikeySpecialSymbolRequired,exception,API-KEY должен содержать как минимум один специальный символ,API-KEY must contain at least one special character
+apikeyUppercaseRequired,exception,API-KEY должен содержать как минимум одну заглавную букву,API-KEY must contain at least one capital letter
+rateNotDeleted,exception,Тариф не может быть удален,Tariff cannot be deleted
+rateNotFound,exception,Тариф не найден,Tariff not found
+refreshTokenRequired,exception,Необходим REFRESH token,REFRESH token required
+sessionIsAlreadyExpired,exception,Сессия уже истекла,Session has already expired
+shortApikey,exception,Длина API-KEY должна быть не менее 16 символов,API-KEY length must be at least 16 characters
+specialOfferNotFound,exception,Специальное предложение не найдено,No special offer found
+storageNotDeleted,exception,Камера хранения не может быть удалена,Luggage storage cannot be deleted
+storageNotFound,exception,Камера хранения не найдена,Luggage storage not found
+sumMisMatch,exception,Сумма цен на товары не соответствует общей сумме заказа,The sum of prices for goods does not correspond to the total amount of the order
+terminalNotFound,exception,Терминал не найден,Terminal not found
+tripNotFound,exception,Рейс не найден,Flight not found
+userIsAlreadyRegistered,exception,Пользователь уже зарегистрирован,User is already registered
+userIsNotIntegratedWithMoa,exception,Пользователь не интегрирован с бонусной программой MILEONAIR,The user is not integrated with the MILEONAIR bonus program
+userNotFound,exception,Пользователь не найден,User not found
+userNotFoundInMoa,exception,Пользователь бонусной программы MILEONAIR не найден,MILEONAIR bonus program user not found
+userNotRegisteredInMoa,exception,Пользователь не зарегистрирован в бонусной программе MILEONAIR,The user is not registered in the MILEONAIR bonus program
+validationRequestError,exception,Ошибка валидации запроса,Request validation error
+unknownAppException,exception,Неизвестная ошибка приложения,Unknown application error
+unknownServerException,exception,Неизвестная ошибка сервера,Unknown server error
+home,home,Главная,Home
+luggageStorage,home,Камера хранения,Luggage storage
+lostItemInAirport,home,Забытые вещи в аэропорту,Lost items at the airport
+leaveYourLuggage,home,Оставить багаж,Leave luggage
+usefulInformation,home,Полезная информация,Useful information
+useManualAndAutomaticStorageCameras,home,Воспользуйтесь ручными и автоматическими камерами хранения,Take advantage of manual and automatic storage lockers
+sendingParsels,home,Отправка посылок,Sending parcels
+fastDeliveryYourShipment,home,Быстрая доставка ваших отправлений,Fast delivery of your shipments
+notifications,notifications,Уведомления,Notifications
+onboardingLostFoundDesc,onboarding,"Поможем вернуть потерянный, зарегистрированный багаж","We will help you return lost, checked luggage"
+onboardingLostFoundTitle,onboarding,Lost & Found ✈️,Lost & Found ✈️
+onboardingLostItemsDesc,onboarding,"Не переживайте, если оставили ваши вещи на борту воздушного судна или на территории аэропорта — мы поможем вернуть их!",Don't worry if you left your belongings on board an aircraft or on the airport grounds - we will help you return them!
+onboardingLostItemsTitle,onboarding,Помощь при потере личных вещей 🔍,Help with loss of personal belongings 🔍
+onboardingLuggageStorageDesc,onboarding,Находите камеры хранения и путешествуйте налегке,Find luggage storage and travel light
+onboardingLuggageStorageTitle,onboarding,Система камер хранения 🎒,Luggage storage system 🎒
+login,onboarding,Войти,Login
+continueWithoutAuth,onboarding,Продолжить без авторизации,Continue without authorization
+byContinuingYouAgreeTo,authentication,"Продолжая, вы соглашаетесь с","By continuing, you agree to"
+codeWillBeSentWithinMinute,authentication,Код придёт в течение минуты на номер,The code will be sent to your number within a minute
+entrance,authentication,Вход,Entrance
+entryCode,authentication,Код для входа,Login code
+getCode,authentication,Получить код,Get code
+withPrivacyPolicyAndUserAgreement,authentication,Политикой конфиденциальности и Пользовательским соглашением,Privacy Policy and User Agreement
+blankPhone,authentication,Пустой телефон,Blank phone
+incorrentCountryCode,authentication,Неправильный код страны,Incorrect country code
+incorrentPhoneNumber,authentication,Неправильный номер телефона,Incorrect phone number
+allowAppUseBiometricsAuthentication,biometrics,Разрешить приложению использовать аутентификацию по биометрии?,Allow an app to use biometric authentication?
+biometricHint,biometrics,Подтвердите личность,Verify your identity
+biometricNotRecognized,biometrics,Биометрические данные не распознаются,Biometric data is not recognized
+biometricRequiredTitle,biometrics,Требуется биометрия,Biometrics required
+biometricsTitle,biometrics,Требуется аутентификация,Authentication required
+lockOut,biometrics,Заблокировано,Blocked
+connectLoginBy,biometrics,"Подключите вход по {type}, чтобы не вводить ПИН-код",Connect input using {type} to avoid entering a PIN code
+useBy,biometrics,Использовать {type},Use {type}
+bookLuggageStorage,banner,Забронируйте камеру хранения,Book your luggage storage
+toBook,banner,Забронировать,Book
+updateToLatestVersionOfApp,banner,Обновитесь до актуальной версии приложения,Update to the latest version of the application
+balance,profile,Баланс,Balance
+aboutBAG24,profile,О BAG24,About BAG24
+appVersion,profile,Версия приложения,Application version
+areYouSureYouWantDeleteYourAccount,profile,"Вы уверены, что хотите удалить аккаунт?",Are you sure you want to delete your account?
+areYouSureYouWantLogOut,profile,"Вы уверены, что хотите выйти?",Are you sure you want to go out?
+connected,profile,Подключен,Connected
+dataIsSaved,profile,Данные сохранены,Data saved
+deleteAnAccount,profile,Удалить аккаунт,Delete account
+notConnected,profile,Не подключен,Not connected
+myData,profile,Мои данные,My details
+name,profile,Имя,Name
+paymentMethod,profile,Способ оплаты,Payment method
+privacyPolicy,profile,Политика конфиденциальности,Privacy Policy
+temporarilyUnavailable,profile,Временно недоступен,Temporarily unavailable
+surname,profile,Фамилия,Surname
+middleName,profile,Отчество,Surname
+settings,profile,Настройки,Settings
+toConnect,profile,Подключить,Connect
+whatIsYourName,profile,Как вас зовут?,What's your name?
+logInOrRegister,profile,Войти или зарегистрироваться,Login or register
+loginToExistingAccountOrCreateNew,profile,Войдите в существующий аккаунт\nили создайте новый,Log in to your existing account\nor create a new one
+logInYourProfile,profile,Войдите в профиль,Login to your profile
+logInYourProfileDescription,profile,"Чтобы выбирать камеры хранения, оставлять заявки на возврат и обращаться в поддержку","To select storage lockers, submit return requests and contact support"
+logOutOfYourProfile,profile,Выйти из профиля,Log out of profile
+nameCannotBeEmpty,profile,Имя не может быть пустым,The name cannot be empty
+nameMustLessThen,profile,Имя должно быть меньше 20 символов,The name must be less than 20 characters
+nameContainOnlyLetters,profile,Имя может содержать только буквы,The name can only contain letters
+lastNameCannotBeEmpty,profile,Фамилия не может быть пустым,Last name cannot be empty
+lastNameMustLessThen,profile,Фамилия должно быть меньше 20 символов,Last name must be less than 20 characters
+lastNameContainOnlyLetters,profile,Фамилия может содержать только буквы,Last name can only contain letters
+userAgreement,profile,Пользовательское соглашение,User Agreement
+userAgreementAndPersonalDataProcessingRules,profile,Пользовательское соглашение и правила обработки персональных данных,User agreement and rules for processing personal data
+userAgreementAndPersonalDataProcessingRulesDescription,profile,1. Камера хранения по обслуживанию авиапассажиров работает круглосуточно без перерывов.\n2. На хранение принимаются вещи в любой упаковке обеспечивающей сохранность исключающей свободный доступ к содержимому повреждения и загрязнения вещей других клиентов и оборудования камеры хранения.3. Вес одного места багажа не должен превышать 30 кг.\n4. Фрукты овощи и другие продукты принимаются на хранение только упаковке; за их естественную порчу администрация ответственности не несёт.\n5. Стекло и другие бьющиеся предметы принимаются только в упаковке с надписью «Осторожно — Стекло»\n6. Не принимаются на хранение взрывчатые огнеопасные легко воспламеняющиеся и неприятно пахнущие вещества. Оружие и патроны к нему живая птица и другая живность документы деньги драгоценности.\n7. Получение вещей: при получении вещей из камеры хранения клиент должен предъявить кладовщику номерок и назвать фамилию.\n8. Выдача вещей из камеры хранения производится вне очереди\n9. Вещи не полученные владельцем в течение 6 месяцев со дня принятия на хранение считаются невостребованными и реализуются в установленном порядке\n10. При утрате клиентом номерка вещи выдаются на основании его заявления при предъявлении его документов и доказательств принадлежности ему вещей\n11. Компенсация за утерю номерка — 500 рублей.\n12. Оплата производится при сдаче багажа.,"1. The storage room for servicing air passengers operates around the clock without interruptions.\n2. Items are accepted for storage in any packaging that ensures safety and excludes free access to the contents of damage and contamination of other clients' belongings and storage room equipment.3. The weight of one piece of luggage must not exceed 30 kg.\n4. Fruits, vegetables and other products are accepted for storage only in packaging; The administration is not responsible for their natural damage.\n5. Glass and other breakable items are accepted only in packaging marked “Caution – Glass”\n6. Explosive, flammable, flammable and unpleasantly smelling substances are not accepted for storage. Weapons and ammunition, live birds and other living creatures, documents, money, jewelry.\n7. Receiving things: when receiving things from the storage room, the client must show the storekeeper a number and name.\n8. Items from the storage room are issued out of turn\n9. Items not received by the owner within 6 months from the date of acceptance for storage are considered unclaimed and are sold in the prescribed manner\n10. If the client loses his number, things are issued on the basis of his application upon presentation of his documents and evidence of belonging to him\n11. Compensation for lost license plate is 500 rubles.\n12. Payment is made upon baggage check-in."
+airport,support,Аэропорт,Airport
+topic,support,Тема,Subject
+orderByNumber,support,Заказ № {number},Order No. {number}
+comment,support,Комментарий,Comment
+messageSentSuccessfully,support,Сообщение успешно отправлено!,Message sent successfully!
+selectAirport,support,Выберите аэропорт,Select airport
+selectService,support,Выберите сервис,Select service
+send,support,Отправить,Send
+sendMessage,support,Отправить сообщение,Send message
+questionsAndAnswers,support,Вопросы и ответы,Questions and answers
+howAppWorks,support,Как работает BAG24,How BAG24 works
+howAppWorks1Description,support,Загрузите фотографию и выберите необходимый тариф,Upload a photo and select the required rate
+howAppWorks1Title,support,Оформите заказ в приложении 📱,Place your order in the app 📱
+howAppWorks2Description,support,Вы можете оплатить заказ онлайн или в камере хранения,You can pay for your order online or at the locker
+howAppWorks2Title,support,Оплатите заказ удобным способом 💸,Pay for your order in a convenient way 💸
+howAppWorks3Description,support,Передайте оформленный и оплаченный заказ нашему сотруднику и не переживайте о сохранности,Hand over your completed and paid order to our employee and don’t worry about its safety
+howAppWorks3Title,support,Передайте багаж сотруднику 👍,Hand over your luggage to the employee 👍
+writeToSupport,support,Написать в поддержку,Write to support
+weAnswerTheMostFrequentQuestions,support,Отвечаем на самые частые вопросы. Если не найдёте свой ответ — напишите в поддержку,"We answer the most frequently asked questions. If you don’t find your answer, write to support"
+faqHowPayOrder,support,Как оплатить заказ?,How to pay for an order?
+faqHowPayOrderDescription,support,"Для оформления и оплаты заказа необходимо перейти в раздел ""Оставить багаж"" и следовать инструкциям на экране.\nПосле оформления заказа Вы сможете его оплатить в мобильном приложении (Система быстрых платежей, платежные системы - МИР, SberPay, Visa, MasterCard) или на стойке в ""Камере хранения"". После оформления заказа в мобильном приложении появится QR-код, который необходимо предъявить сотруднику камеры хранения для сдачи багажа. Для сдачи багажа на хранение необходимо оплатить первые сутки согласно выбранному тарифу.","To place and pay for your order, you must go to the “Leave luggage” section and follow the instructions on the screen.\nAfter placing your order, you can pay for it in the mobile application (Fast Payment System, payment systems - MIR, SberPay, Visa, MasterCard) or at the counter in ""Luggage storage."" After placing your order, a QR code will appear in the mobile application, which must be presented to the luggage storage employee to check in your luggage. To check in luggage for storage, you must pay for the first day according to the selected tariff."
+faqWhichRateChoose,support,Какой тариф выбрать?,Which tariff should I choose?
+faqWhichRateChooseDescription,support,"Тариф Стандарт\n\nПлата за хранение багажа взимается за каждый предмет (1 место до 203 см). Первые календарные сутки (с 00:00 до 23:59) – 700 ₽, каждые последующие календарные сутки – 300 ₽ В стоимость входит услуга хранения багажа и его пломбирование.\n\nТариф Стандарт+\n\nПлата за хранение багажа взимается за каждый предмет (1 место свыше 203 см). Первые календарные сутки (с 00:00 до 23:59) – 1250 ₽, каждые последующие календарные сутки –  600 ₽ В стоимость входит услуга хранения багажа и его пломбирование.\n\nТариф Стандарт Лайт\n\nПлата за хранение багажа взимается за каждый предмет (1 место до 203 см). Первые календарные сутки (с 00:00 до 23:59) – 600 ₽, каждые последующие календарные сутки – 300 ₽ В стоимость входит услуга хранения багажа.\n\nТариф Стандарт Лайт+\n\nПлата за хранение багажа взимается за каждый предмет (1 место свыше 203 см). Первые календарные сутки (с 00:00 до 23:59) – 1150 ₽, каждые последующие календарные сутки – 600 ₽ В стоимость входит услуга хранения багажа.","Standard tariff\n\nLuggage storage fee is charged for each item (1 piece up to 203 cm). The first calendar day (from 00:00 to 23:59) – 700 ₽, each subsequent calendar day – 300 ₽ The price includes luggage storage and sealing.\n\nStandard+ tariff\n\nLuggage storage fee is charged for each subject (1 place over 203 cm). The first calendar day (from 00:00 to 23:59) – 1250 ₽, each subsequent calendar day – 600 ₽ The price includes luggage storage and sealing.\n\nStandard Light tariff\n\nLuggage storage fee is charged for each item (1 place up to 203 cm). The first calendar day (from 00:00 to 23:59) – 600 ₽, each subsequent calendar day – 300 ₽ The price includes luggage storage service.\n\nStandard Light+ tariff\n\nLuggage storage fee is charged for each item ( 1 place over 203 cm). The first calendar day (from 00:00 to 23:59) – 1150 ₽, every subsequent calendar day – 600 ₽ The price includes luggage storage service."
+faqHowManyItemsInOrder,support,Сколько предметов может быть в заказе?,How many items can there be in an order?
+faqHowManyItemsInOrderDescription,support,"В камере хранения допускается хранение до 10 единиц багажа включительно.\nТребования, предъявляемые к багажу: в любой упаковке, обеспечивающей сохранность, исключающей свободный доступ к содержимому, повреждения и загрязнения вещей других клиентов и оборудования камеры хранения. Вес одного места багажа не должен превышать 30 кг. Фрукты, овощи и другие продукты принимаются на хранение только в упаковке. За их естественную порчу администрация ответственности не несёт. Стекло и другие бьющиеся предметы принимаются только в упаковке с надписью «Осторожно — Стекло». Не принимаются на хранение взрывчатые, огнеопасные, легковоспламеняющиеся и неприятно пахнущие вещества. Оружие и патроны к нему, живая птица и другая живность, документы, деньги, драгоценности.","In the storage room, up to 10 pieces of luggage can be stored inclusive.\nRequirements for luggage: in any packaging that ensures safety, preventing free access to the contents, damage and contamination of things of other clients and storage room equipment. The weight of one piece of luggage must not exceed 30 kg. Fruits, vegetables and other products are accepted for storage only in packaging. The administration is not responsible for their natural deterioration. Glass and other breakable items will only be accepted in packaging marked “Caution – Glass.” Explosive, flammable, flammable and unpleasant-smelling substances are not accepted for storage. Weapons and ammunition, live birds and other animals, documents, money, jewelry."
+faqNoQRCode,support,Что делать если нет QR-кода?,What to do if there is no QR code?
+faqNoQRCodeDescription,support,"Если в мобильном приложении после оформления заказа и его оплаты не появился QR-код для сдачи багажа, необходимо обратиться в службу поддержки.","If a QR code for checking in your luggage does not appear in the mobile application after placing an order and paying for it, you must contact support."
+faqHowCancelOrder,support,Как отменить заказ?,How to cancel an order?
+faqHowCancelOrderDescription,support,"Для отмены заказа необходимо перейти в раздел ""Заказы"" на главном экране мобильного приложения и выбрать заказ, который хотите отменить. Откройте дополнительное меню и выберите ""Отменить заказ"". В данном случае заказ будет отменен и удален из приложения. Если Вы оплатили заказ, денежные средства будут возвращены на счет оплаты. Если вы хотите внести изменения в заказ и в последующем использовать его, воспользуйтесь кнопкой «Оформить возврат».","To cancel an order, you must go to the ""Orders"" section on the main screen of the mobile application and select the order you want to cancel. Open the additional menu and select ""Cancel order"". In this case, the order will be canceled and deleted from the application. If you have paid for the order, the funds will be returned to your payment account. If you want to make changes to your order and use it later, use the “Make a return” button."
+topicCannotBeEmpty,support,Тема не может быть пустой,The topic cannot be empty
+commentCannotBeEmpty,support,Тема не может быть пустой,The topic cannot be empty
+lengthCannotExceed,support,Длина не может превышать {length},Length cannot exceed {length}
+appTheme,settings,Тема приложения,Application theme
+biometrics,settings,Биометрия,Biometrics
+biometricsLogin,settings,Вход по биометрии,Login using biometrics
+changeAppLoginCode,settings,Изменить код для входа в приложение,Change the application login code
+safety,settings,Безопасность,Safety
+downloadTheUpdate,system,Скачать обновление,Download update
+failedToUploadData,system,Не удалось загрузить данные,Failed to load data
+checkYourInternetConnectionAndTryAgain,system,Проверьте ваше интернет-соединение и попробуйте еще раз,Check your internet connection and try again
+technicalProblems,system,Технические неполадки,Technical problems
+timeToUpdate,system,Пора обновиться,It's time to upgrade
+versionNoLongerSupportedDownloadLatest,system,Эта версия приложения BAG24 более не поддерживается. Скачайте последнюю версию ({version}),This version of the BAG24 application is no longer supported. Download the latest version ({version})
+weWillFixItSoon,system,"Это временно, скоро всё наладим","This is temporary, we'll fix it soon"
+systemTheme,settings,Системная,System
+lightTheme,settings,Светлая,Light
+darkTheme,settings,Темная,Dark
+lang,settings,Язык,Language
+russian,settings,Русский,Russian
+english,settings,Английский,English
+changePinCode,pin,Изменить ПИН-код,Change PIN
+enterCode,pin,Введите код,Enter code
+enterNewPinCode,pin,Задайте новый ПИН-код,Set a new PIN
+enterOldCode,pin,Введите старый код,Enter old code
+enterPinCode,pin,Введите ПИН-код,Enter your PIN
+forgotYourPin,pin,Забыли ПИН-код?,Forgot your PIN?
+repeatPinCode,pin,Повторите ПИН-код,Repeat PIN code
+setPinCode,pin,Задайте ПИН-код,Set a PIN code
+audioAccessDenied,photo,Вам отказано в доступе к аудио.,You are denied access to audio.
+audioAccessDeniedWithoutPrompt,photo,"Пожалуйста, перейдите в настройки приложения, чтобы включить доступ к аудио.",Please go to the app settings to enable audio access.
+audioAccessRestricted,photo,Доступ к аудио ограничен.,Access to audio is limited.
+cameraAccessDenied,photo,Вам отказано в доступе к камере.,You are denied access to the camera.
+cameraAccessDeniedWithoutPrompt,photo,"Пожалуйста, перейдите в настройки приложения, чтобы включить доступ к камере.",Please go to the app settings to enable camera access.
+cameraAccessRestricted,photo,Доступ к камере ограничен.,Access to the camera is limited.
+camerasNotFound,photo,Камеры не найдены.,No cameras found.
+bonusProgram,moa,Бонусная программа,Bonus program
+correctCode,moa,Правильный код,Correct code
+iAmParticipant,moa,Я являюсь участником,I am a member
+invalidCodeTryAgain,moa,"Неверный код, попробуйте еще раз","Invalid code, try again"
+learnMoreAboutProgram,moa,Подробнее о программе,More about the program
+moaBonusProgramDescription,moa,"MILEONAIR — это бонусная программа, дающая участникам возможность копить и тратить мили на протяжении всей поездки",MILEONAIR is a bonus program that gives members the opportunity to earn and spend miles throughout their trip
+linkCardToYourAccount,payment,Привязать карту к аккаунту,Link the card to your account
+doYouWantToSaveCardToPay,payment,Вы хотите сохранить карту\nдля оплаты следующего заказа?,Do you want to save the card\nto pay for your next order?
+paymentMethods,payment,Способы оплаты,Payment methods
+noSavedCards,payment,У вас нет сохраненных карт,You have no saved cards
+addCardPrompt,payment,"Добавьте карту, чтобы использовать её для оплаты заказов",Add a card to use it to pay for orders
+deleteCardConfirmation,payment,Удалить карту?,Delete card?
+autoPaymentDisableWarning,payment,Функция автоплатежа по данной карте будет отключена у активных заказов,The auto payment function for this card will be disabled for active orders
+keepCard,payment,"Нет, оставить","No, leave it"
+cardDeletedSuccess,payment,Карта успешно удалена,Card deleted successfully
+enableAutoPayment,payment,Включить автосписание,Enable auto debit
+enableCardBinding,payment,Включите привязку карты для автосписания,Enable card binding for auto debit
+waitingForPayment,payment,Ждем оплату,We are waiting for payment
+waitingMessage,payment,Это может занять несколько секунд,This may take a few seconds
+returnToOrders,payment,Вернуться к заказам,Return to orders
+paymentSuccessful,payment,Оплата прошла успешно!,The payment was successful!
+paymentFailed,payment,Не удалось оплатить,Failed to pay
+paymentErrorMessage,payment,"Что-то пошло не так.\nПожалуйста, попробуйте еще раз или оплатите в камере хранения",Something went wrong.\nPlease try again or pay at the storage room
+backToHome,payment,На главную,Home
+viewOrder,payment,Посмотреть заказ,View order
+retryPayment,payment,Повторить еще раз,Repeat again
+appOpeningFailed,payment,Не удалось открыть приложение,Failed to open application
+allPaymentMethods,payment,Все способы оплаты,All payment methods
+supportedCardTypes,payment,"МИР, Visa, Master Card","MIR, Visa, Master Card"
+sberPay,payment,SberPay,SberPay
+contactlessPayment,payment,Бесконтактная оплата,Contactless payment
+newCard,payment,Новая карта,New map
+writeOff,payment,Списать,Write off
+fastPaymentSystem,payment,Система быстрых платежей,Fast payment system
+viaBankApp,payment,Через приложение банка,Via the bank app
+amountDue,payment,К оплате,For payment
+bankCard,payment,Банковская карта,Bank card
+cash,payment,Наличные,Cash
+moaMiles,payment,Мили MILEONAIR,MILEONAIR miles
+mirPay,payment,МИР Pay,MIR Pay
+mir,payment,Мир,World
+visa,payment,Visa,Visa
+mastercard,payment,MasterCard,MasterCard
+jcb,payment,JCP,JCP
+card,payment,Карта,Map
+paymentNotCompleted,payment,Оплата не завершена,Payment not completed
+active,orders,Активные,Active
+orders,orders,Заказы,Orders
+failedToLoad,orders,Не удалось загрузить,Failed to load
+youHaveNoOrdersYet,orders,У вас пока нет заказов,You have no orders yet
+thereWillBeOrdersAndRequests,orders,Здесь будут отображаться будущие заказы и заявки,Future orders and requests will be displayed here
+thereWillBecompletedAndCancelledOrdersAndRequests,orders,Здесь будут отображаться завершенные и отмененные заказы и заявки,Completed and canceled orders and requests will be displayed here
+tryAgain,orders,Попробуйте еще раз,try again
+luggagePhoto,photoRules,Фотография багажа,Luggage photo
+toPlaceYourOrderCorrectly,photoRules,Для правильного оформления заказа нужно сфотографировать каждый багаж по отдельности,"To place your order correctly, you need to photograph each piece of luggage separately."
+addPhoto,photoRules,Добавить фотографию,Add a photo
+takePhoto,photoRules,Сделать фотографию,Take a photo
+chooseFromGallery,photoRules,Выбрать из галереи,Select from gallery
+howToPhotographLuggage,photoRules,Как фотографировать багаж,How to photograph luggage
+lighting,photoRules,Освещение,Lighting
+lightingDescription,photoRules,Используйте естественное освещение или внешние источники света. Избегайте засветов и бликов,Use natural light or external light sources. Avoid glare and glare
+portraitPhotography,photoRules,Портретная съемка,Portrait photography
+portraitPhotographyDescription,photoRules,"Для портретной съёмки лучше всего расположить находку вертикально, чтобы он был хорошо виден","For portrait photography, it is best to position the find vertically so that it is clearly visible"
+step1of2,location,Шаг 1 из 2,Step 1 of 2
+tryToFindAnotherAirport,location,Попробуйте найти другой аэропорт,Try to find another airport
+airportOrIata,location,Аэропорт или IATA,Airport or IATA
+airportSearch,location,Поиск по аэропорту,Search by airport
+chooseStorageCamera,location,Выберите камеру хранения,Select a storage room
+noSuitableOptions,location,Нет подходящих вариантов,No suitable options
+step2of2,luggage_order,Шаг 2 из 2,Step 2 of 2
+passLuggage,luggage_order,Сдать багаж,Check in luggage
+placeAndTime,luggage_order,Место и время,Place and time
+bookingOn,luggage_order,Бронирование на {date},Booking on {date}
+luggage,luggage_order,Багаж,Baggage
+removeLuggage,luggage_order,Удалить багаж,Remove luggage
+areYouSureToRemoveLuggage,luggage_order,"Вы уверены, что хотите удалить багаж?",Are you sure you want to remove your luggage?
+addLuggage,luggage_order,Добавить багаж,Add luggage
+placeAnOrder,luggage_order,Оформить заказ,Place an order
+howToAddLuggageCorrectlyTitle,luggage_order,Как правильно добавить багаж?,How to add luggage correctly?
+howToAddLuggageCorrectlyText,luggage_order,Для правильного оформления заказа нужно сфотографировать каждый багаж по отдельности,"To place your order correctly, you need to photograph each piece of luggage individually."
+orderHasBeenPlaced,luggage_order,Заказ оформлен,The order has been placed
+payOnline,luggage_order,Оплатить онлайн,Pay online
+orderDetails,luggage_order,Данные о заказе,Order details
+orderNumber,luggage_order,Номер заказа,Order number
+address,luggage_order,Адрес,Address
+dateAndTime,luggage_order,Дата и время,Date and time
+addingLuggage,luggage_order,Добавление багажа,Adding luggage
+addNewLuggage,luggage_order,Добавить новый багаж,Add new luggage
+takePhotoOfYourLuggage,luggage_order,Сфотографировать багаж,Take a photo of your luggage
+addToOrder,luggage_order,Добавить к заказу,Add to order
+changeLuggage,luggage_order,Изменить багаж,Change luggage
+photo,luggage_order,Фотография,Photo
+selectRate,luggage_order,Выберите тариф,Select tariff
+rate,luggage_order,Тариф,Rate
+additionalProtection,luggage_order,Доп. защита,Add. protection
+putSealOnYourLuggage,luggage_order,Поставим пломбу на Ваш багаж,We will put a seal on your luggage
+inSumOf3dimensions,luggage_order,В сумме 3-х измерений,In the sum of 3 dimensions
+add,luggage_order,Добавить,Add
+daily,luggage_order,Посуточно,Daily
+specialOffers,luggage_order,Специальные предложения 🔥,Special offers 🔥
+specialOffersTooltip,luggage_order,• При единовременной оплате\nза 2 или 3 суток хранения действует\nспециальное предложение\n• При хранении заказа менее\nоплаченного периода по ценам из\nспециального предложения сумма\nсредств за оставшееся время\nхранения не возвращается,"• If you make a one-time payment\nfor 2 or 3 days of storage, a\nspecial offer\nis valid\n• When storing an order for less\npaid period at prices from\nthe special offer, the amount\nof funds for the remaining\nstorage time is not refundable"
+storageConditions,luggage_order,Условия хранения,Storage conditions
+weAnswerYourQuestions,luggage_order,Отвечаем на ваши вопросы,We answer your questions
+storageConditionsTitle1,storage_conditions,Стоимость хранения,Storage cost
+storageConditionsDescription1,storage_conditions,одного места багажа исчисляется с момента сдачи до 00:00 текущих суток,one piece of baggage is calculated from the moment of delivery until 00:00 of the current day
+storageConditionsTitle2,storage_conditions,Последующее хранение,Subsequent storage
+storageConditionsDescription2,storage_conditions,Продление с 00:00 часов следующих суток с округлением до полных суток,"Extension from 00:00 the next day, rounded up to a full day"
+storageConditionsTitle3,storage_conditions,Оплата за первые сутки,Payment for the first day
+storageConditionsDescription3,storage_conditions,производится при сдаче багажа. Доплата за последующее хранение — при выдаче багажа,is done when checking in baggage. Additional payment for subsequent storage - upon baggage claim
+storageConditionsTitle4,storage_conditions,Выдача вещей,Issue of things
+storageConditionsDescription4,storage_conditions,на временное использование считается завершением оказания услуги,for temporary use is considered the completion of the service
+storageConditionsTitle5,storage_conditions,Повторная сдача,Retake
+storageConditionsDescription5,storage_conditions,"подлежит оплате, согласно действующему прейскуранту. Любая привязь считается отдельным местом",payable according to the current price list. Any tether is considered a separate place
+storageConditionsTitle6,storage_conditions,Вещи на хранение,Items for storage
+storageConditionsDescription6,storage_conditions,принимаются с объявленной стоимостью 60 000 ₽,"accepted with a declared price of 60,000 ₽"
+wrongPaymentMethod,cancel_order,Не тот способ оплаты,Wrong payment method
+willChangeOrderAndPlaceAgain,cancel_order,Изменю заказ и оформлю заново,I will change the order and place it again
+notSatisfiedWithPriceAndTariff,cancel_order,Не устраивает цена и тариф,Not satisfied with the price and tariff
+notSatisfiedWithStorageRoom,cancel_order,Не устраивает камера хранения,Not satisfied with the storage room
+foundAnotherOption,cancel_order,Нашел другой вариант,Found another option
+changedMindAboutBuying,cancel_order,Передумал покупать,Changed my mind about buying
+anotherReason,cancel_order,Другая причина,Another reason
+orderCanceled,cancel_order,Заказ отменен,Order canceled
+cancellationOfOrder,cancel_order,Отмена заказа,Cancellation of an order
+whyDecidedToCancelOrder,cancel_order,Почему решили отменить заказ?,Why did you decide to cancel the order?
+describeTheProblem,cancel_order,Опишите проблему,Describe the problem
+cancelOrderAndIssueRefund,cancel_order,Отменить заказ и оформить возврат,Cancel order and issue a refund
+moneyWillBeReturnedToAccount,cancel_order,Деньги скоро вернутся на счет,The money will be returned to your account soon
+cancelOrder,order,Отменить заказ,Cancel order
+checkInYourLuggage,order,Сдать багаж,Check in luggage
+date,order,Дата:,Date:
+mile,order,миля,mile
+miles,order,мили,miles
+orderHelp,order,Помощь по заказу,Order help
+orderHowToGet,order,Для получения багажа перейдите на страницу заказа,"To claim your luggage, go to the order page"
+orderPaymentRequired,order,Необходимо оплатить заказ,You need to pay for your order
+orderStatus,order,Статус заказа,Order status
+additionalPaymentIsRequired,order,Требуется доплата,Additional payment required
+inProcessing,order,В обработке,In processing
+inStorage,order,На хранении,In storage
+issuedSingle,order,Выдан,Issued
+partiallyIssued,order,Выдан частично,Partially issued
+pickUpLuggage,order,Забрать багаж,Pick up luggage
+placed,order,Оформлен,Decorated
+forTheFirst,order,за первые,for the first
+firstDay,order,Первые сутки,First day
+dayPeriod,order,сутки,day
+first,order,Первые,First
+day,order,день,day
+forDays,order,"{count, plural, =0{{count} дней} =1{{count} день} few{{count} дня} many{{count} дней} other{{count} дней}}","{count, plural, =0{{count} days} =1{{count} day} few{{count} days} many{{count} days} other{{count} days}}"
+subsequentDay,order,Каждые последующие сутки,Every subsequent day
+yourOrderIsBeingProcessed,order,Ваш заказ обрабатывается. Для обновления статусов заказа потяните вниз,"Your order is being processed. To update order statuses, pull down"
+goToOrder,order,Перейти к заказу,Go to order
+codeUpdatedEveryMinutes,order,Код обновляется каждые {minutes} минут,The code is updated every {minutes} minutes
+notPaidFor,order,Не оплачен,Not paid
+cancelled,order,Отменен,Canceled
+order,order,Заказ,Order
+paid,order,Оплачен,Paid
+waitForPaymentConfirmation,order,Дождитесь подтверждения оплаты,Wait for payment confirmation
+forWithdrawLuggageSelectFromList,order,"Для получения багажа, выберите его из списка","To claim baggage, select it from the list"
+showQRCodeToEmployeeForPayAndDeposit,order,Покажите QR-код сотруднику для оплаты и сдачи багажа,Show the QR code to the employee for payment and baggage check-in
+showQRCodeToEmployeeForPayAndWithdraw,order,Покажите QR-код сотруднику для оплаты и получения багажа,Show the QR code to the employee to pay and claim your luggage
+showQRCodeToEmployeeForDeposit,order,Покажите QR-код сотруднику для сдачи багажа,Show the QR code to the employee to check your luggage
+showQRCodeToEmployeeForWithdraw,order,Покажите QR-код сотруднику для получения багажа,Show the QR code to the employee to claim your luggage
+orderReceipts,order,Чеки заказа,Order receipts
+issueAReturn,order,Оформить возврат,Issue a return
+doYouWantToIssueAReturn,order,Хотите оформить возврат?,Do you want to issue a return?
+doYouWantToIssueAReturnDescription,order,"Вы сможете продолжить работу с заказом, деньги вернутся на карту","You will be able to continue working with the order, the money will be returned to the card"
+notNow,order,Не сейчас,Not now
+yesIssueIt,order,"Да, оформить","Yes, issue it"
+sorryNoReceiptsAreAvailable,order,"Извините, в настоящее время чеки по указанному заказу отсутствуют.","Sorry, no receipts are available for this order at this time."
+returnHasBeenProcessedTheMoneyWillBeReturned,order,Возврат оформлен.\nДеньги скоро вернутся на счет,The return has been processed.\nThe money will be returned to your account soon
+luggageKeeping,order,Хранение багажа,Luggage storage
+forStorage,order,За хранение,For storage
+discount,order,Скидка,Discount
+minimumOrderAmount,order,Минимальная сумма заказа,Minimum order amount
+total,order,Итого,Total
+manualLuggageStorage,order,Ручная камера хранения,Manual luggage storage
+luggageTransferred,order,Багаж передается,Baggage is transferred
+luggageIssued,order,Багаж выдается,Baggage is issued
+paid,order,Оплачено,Paid
+placedInStorage,order,Сдан на хранение,Placed in storage
+orderHasBeenIssued,order,Заказ выдан,The order has been issued
+youDecidedOrderCancellation,order,Вы решили отменить заказ,You have decided to cancel your order
+selectAll,order,Выбрать все,Select all
+autoBookingEnabled,order,Автосписание включено,Auto write off enabled
+autoBookingDisabled,order,Автосписание выключено,Auto write off is disabled
+autoBooking,order,Автосписание,Auto write-off
+autoBookingAdvice,order,"Советуем включать, так удобнее","We recommend turning it on, it’s more convenient."
+disableAutoBookingQuestion,order,Хотите отключить автосписание?,Do you want to disable auto-debit?
+disableAutoBookingDescription,order,Придется вручную выбирать способ оплаты,You will have to manually select a payment method
+disable,order,Отключить,Disable
+submitOrder,order,Сдать заказ,Submit an order
+pickupOrder,order,Забрать заказ,Pick up your order
+storedInStorageRoom,order,Хранятся в камере хранения,Stored in a storage room
+issuedPlural,order,Выданы,Issued
+timeLeft,order,Осталось,Left
+orderContent,order,Состав заказа,Order content

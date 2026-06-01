@@ -1,0 +1,9 @@
+include: package:carapacik_lints/core.yaml
+analyzer:
+  exclude:
+    - '**/generated/**'
+    - android/**
+    - ios/**
+    - packages/platform_plugins/hms/**
+formatter:
+  page_width: 120

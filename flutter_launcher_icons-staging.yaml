@@ -1,0 +1,13 @@
+# flutter pub run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/app/stage/icon.png"
+  android: true
+  min_sdk_android: 28
+  adaptive_icon_background: "assets/app/icon_background.png"
+  adaptive_icon_foreground: "assets/app/stage/icon_foreground.png"
+  adaptive_icon_monochrome: "assets/app/stage/icon_monochrome.png"
+  ios: true
+  remove_alpha_ios: true
+  image_path_ios_dark_transparent: "assets/app/stage/icon_dark.png"
+  image_path_ios_tinted_grayscale: "assets/app/stage/icon_tinted.png"
+  desaturate_tinted_to_grayscale_ios: true

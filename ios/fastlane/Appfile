@@ -1,0 +1,5 @@
+app_identifier("ru.bag24.storage") # The bundle identifier of your app
+apple_id("a.kozlov@bag24.ru") # Your Apple Developer Portal username
+
+itc_team_id("122343715") # App Store Connect Team ID
+team_id("652C2XWG24") # Developer Portal Team ID

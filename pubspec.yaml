@@ -1,0 +1,124 @@
+name: bag24
+description: 'BAG24 client application'
+publish_to: none
+version: 1.1.0+20
+environment:
+  sdk: ^3.13.0
+  flutter: ">=3.47.0"
+
+workspace:
+  - packages/platform_plugins/gms/push_notification_service
+  - packages/platform_plugins/interface/push_notification_interface
+  - packages/rest_client
+
+dependencies:
+  appmetrica_plugin: ^4.1.0
+  bloc: ^9.2.1
+  cached_network_image: ^4.0.0
+  camera: ^0.12.1
+  carapacik_dio_logger: ^1.0.0
+  clock: ^1.1.3
+  collection: ^1.19.1
+  connectivity_plus: ^7.3.1
+  decimal: ^3.2.6
+  device_info_plus: ^13.2.0
+  dio: ^5.11.0
+  email_validator: ^3.0.0
+  enough_mail: ^2.1.7
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  flutter_local_notifications: ^22.3.0
+  flutter_localizations:
+    sdk: flutter
+  flutter_multi_formatter: ^2.13.11
+  flutter_secure_storage: ^11.0.0
+  flutter_slidable: ^4.0.3
+  flutter_svg: ^2.3.0
+  freezed_annotation: ^3.1.0
+  geolocator: ^14.0.3
+  go_router: ^18.0.1
+  image_picker: ^1.2.3
+  internet_connection_checker_plus: ^3.1.1
+  intl: ^0.20.3
+  local_auth: ^3.0.2
+  local_auth_android: ^2.0.10
+  local_auth_darwin: ^2.0.4
+  meta: ^1.19.0
+  package_info_plus: ^10.2.1
+  path: ^1.9.1
+  permission_handler: ^13.0.1
+  pinput: ^6.0.2
+  push_notification_interface:
+    path: packages/platform_plugins/interface/push_notification_interface
+  push_notification_service:
+    path: packages/platform_plugins/gms/push_notification_service
+  qr_flutter: ^4.1.0
+  rest_client:
+    path: packages/rest_client
+  retrofit: ^4.10.0
+  rxdart: ^0.28.0
+  screen_brightness: ^2.1.11
+  sentry_flutter: ^10.0.0-alpha.4
+  shared_preferences: ^2.5.5
+  smooth_page_indicator: ^3.0.0
+  stack_trace: ^1.12.2
+  top_snackbar_flutter: ^3.4.0
+  url_launcher: ^6.3.2
+  uuid: ^4.6.0
+  webview_flutter: ^4.14.1
+  webview_flutter_android: ^4.14.1
+  webview_flutter_wkwebview: ^3.26.1
+
+dev_dependencies:
+  bloc_test: ^10.0.0
+  build_runner: ^2.16.1
+  carapacik_lints: ^3.13.1
+  file: ^7.0.1
+  flavors_yaml_merger: ^1.0.6
+  flutter_gen_runner: ^5.15.0
+  flutter_test:
+    sdk: flutter
+  freezed: ^4.0.1
+  glob: ^2.2.0
+  mockito: ^5.8.1
+  mocktail: ^1.0.5
+  test: ^1.31.1
+
+flutter:
+  uses-material-design: true
+  config:
+    disable-swift-package-manager: true
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/svg/
+  fonts:
+    - family: Rubik
+      fonts:
+        - asset: assets/fonts/Rubik-Regular.ttf
+        - asset: assets/fonts/Rubik-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Rubik-SemiBold.ttf
+          weight: 600
+
+flutter_gen:
+  output: lib/src/core/constant/generated
+  line_length: 120
+  integrations:
+    flutter_svg: true
+
+flutter_intl:
+  enabled: true
+  class_name: AppLocalizations
+  main_locale: ru
+  arb_dir: lib/src/core/constant/localization/translations
+  output_dir: lib/src/core/constant/localization/generated
+
+arb_generator:
+  input_filepath: "assets/l10n.csv"
+  output_directory: lib/src/core/constant/localization/translations
+  filename_prepend: "intl_"
+  csv_settings:
+    delimiter: ","
+    base_index: 1

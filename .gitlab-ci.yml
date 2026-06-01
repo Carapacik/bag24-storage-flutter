@@ -1,0 +1,93 @@
+stages:
+  - prepare
+  - static
+  - test
+  - build
+
+variables:
+  REGISTRY_URL: "ghcr.io"
+  FLUTTER_VERSION: "3.39.2"
+  # Directory declaration and cache location for temporary data
+  PUB_CACHE: ${CI_PROJECT_DIR}/.cache/.pub-cache
+  GRADLE_USER_HOME: ${CI_PROJECT_DIR}/.cache/.gradle
+  GEM_HOME: ${CI_PROJECT_DIR}/.cache/.gem
+
+.cache:
+  cache:
+    paths:
+      - $CI_PROJECT_DIR/.cache/
+    key: "cache-$CI_PIPELINE_ID"
+
+default:
+  image: ${REGISTRY_URL}/8thgencore/flutter:${FLUTTER_VERSION}
+  tags:
+    - int-flydata-ru
+    - okd
+    - bag24
+  before_script:
+    # Setup dependencies and pre-processing
+    - export PATH="$PUB_CACHE/bin:$PATH"
+    - export PATH="$GRADLE_USER_HOME/bin:$PATH"
+
+prepare_data:
+  extends: .cache
+  stage: prepare
+  script:
+    # Generate code and formatting
+    - ./scripts/packages_code_generate.sh
+    - ./scripts/code_prepare.sh
+    # Generate l10n files
+    - ./scripts/intl_generate.sh
+  artifacts:
+    paths:
+      - lib/
+      - test/
+      - packages/rest_client/lib/
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
+
+flutter_analyze:
+  extends: .cache
+  stage: static
+  script:
+    - ./scripts/flutter_analyze.sh
+  dependencies:
+    - prepare_data
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
+
+test:unit:
+  extends: .cache
+  stage: test
+  script:
+    - flutter test
+  dependencies:
+    - prepare_data
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
+
+build_android_apk:
+  extends: .cache
+  stage: build
+  before_script:
+    # Setup key store android
+    - echo "$ANDROID_KEY_PROPERTIES" > android/key.properties
+    - echo "$ANDROID_KEY_STORE" | base64 -d > android/app/upload-keystore.jks
+    - echo "$ENV_FILE_STAGE" > .env.stage.json
+  script:
+    # Build apk android
+    - flutter build apk --release --flavor staging --dart-define-from-file=.env.stage.json --build-number=$CI_PIPELINE_ID
+    # Move the build application to the root
+    - mv build/app/outputs/flutter-apk/app-staging-release.apk app-staging-release-$CI_PIPELINE_ID.apk
+  dependencies:
+    - prepare_data
+  artifacts:
+    paths:
+      - app-staging-release-$CI_PIPELINE_ID.apk
+    expire_in: 1 week
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "stage"'
+      when: always

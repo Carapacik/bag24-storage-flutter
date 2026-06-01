@@ -1,0 +1,13 @@
+targets:
+  $default:
+    sources:
+      - $package$
+      - lib/**
+      - pubspec.yaml
+      - test/**
+    builders:
+      freezed:
+        generate_for:
+          - '**/bloc/**'
+        options:
+          copy_with: false

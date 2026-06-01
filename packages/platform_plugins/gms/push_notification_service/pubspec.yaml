@@ -1,0 +1,17 @@
+name: push_notification_service
+description: Google push service
+environment:
+  sdk: ">=3.13.2 <4.0.0"
+
+resolution: workspace
+
+dependencies:
+  firebase_core: ^4.14.0
+  firebase_messaging: ^16.6.0
+  flutter:
+    sdk: flutter
+  push_notification_interface:
+    path: ../../interface/push_notification_interface
+
+dev_dependencies:
+  carapacik_lints: ^3.13.1

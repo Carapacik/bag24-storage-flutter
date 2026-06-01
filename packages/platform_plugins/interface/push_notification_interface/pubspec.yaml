@@ -1,0 +1,9 @@
+name: push_notification_interface
+description: Interface for push service
+environment:
+  sdk: ">=3.13.2 <4.0.0"
+
+resolution: workspace
+
+dev_dependencies:
+  carapacik_lints: ^3.13.1
